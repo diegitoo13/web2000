@@ -114,6 +114,28 @@
     
     </div>
 
+
+
+    <div class="alert alert-block">
+    <a class="close">×</a>
+    <img class="pull-left" style="margin-top: -8px" src="img/test/drudgesiren.gif" width="80">
+    <h4 class="alert-heading">IP Detected!</h4>
+   <p id="ipAlert">Hold up! We've detected your IP as <span style="color:red; font-weight:bold;" id="userIP">loading...</span>. Just kidding! Got your attention, didn't I?</p>
+
+</div>
+
+    <script>
+    fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+        document.getElementById('userIP').textContent = data.ip;
+    })
+    .catch(error => {
+        document.getElementById('userIP').textContent = "Error getting IP";
+    });
+</script>
+
+    
     <script src="js/snoweffect.js"></script>
 </body>
 </html>
