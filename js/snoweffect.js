@@ -1,5 +1,4 @@
 // Snow added
-<script>
   var snowflakes = 100;
 
   function getRandom(min, max) {
@@ -37,4 +36,3 @@
   for (var i = 0; i < snowflakes; i++) {
     createSnowflake();
   }
-</script>
