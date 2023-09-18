@@ -52,6 +52,39 @@
 </div>
 </header>
 
+<div class="row justify-content-center">
+        <img src="img/cirno-cirno-fumo.gif" alt="Cirno GIF">
+    </div>
+
+    <div class="progress progress-info progress-striped mt-5">
+        <div class="bar" style="width: 1%;"></div>
+    </div>
+
+    <script>
+    function updateProgressBar() {
+        let progressBar = document.querySelector('.progress .bar');
+        let increment = Math.random() * 5 + 1;
+        let currentWidth = parseFloat(progressBar.style.width);
+        
+        if (currentWidth > 80 && Math.random() > 0.5) {
+            progressBar.style.width = Math.random() * 50 + '%';
+        } else {
+            let newWidth = currentWidth + increment;
+            
+            if (newWidth > 90) {
+                progressBar.style.width = '85%';
+            } else {
+                progressBar.style.width = newWidth + '%';
+            }
+        
+        }
+        
+        setTimeout(updateProgressBar, 1000);
+    }
+
+    updateProgressBar();
+</script>
+    
     </div>
 
     <script src="js/snoweffect.js"></script>
