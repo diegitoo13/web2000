@@ -53,13 +53,36 @@
 </div>
 </header>
 
-<div class="row justify-content-center">
-        <img src="img/cirno-cirno-fumo.gif" alt="Cirno GIF">
-    </div>
+    <div class="container">
+    <div class="row">
 
-    <div class="progress progress-info progress-striped mt-5">
-        <div class="bar" style="width: 1%;"></div>
+
+        <div class="span4">
+
+            <img src="img/cirno-cirno-fumo.gif" alt="Cirno GIF" class="img-polaroid" style="max-width: 100%; height: auto;">
+
+            
+            <div class="progress progress-info progress-striped mt-5">
+                <div class="bar" style="width: 1%;"></div>
+            </div>
+        </div>
+
+        <div class="span8">
+            <h3>Example body text</h3>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+            <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui.</p>
+        </div>
+
     </div>
+</div>
+
+
+<script>
+    function updateProgressBar() {
+        let progressBar = document.querySelector('.progress .bar');
+        let increment = Math.random() * 5 + 1;
+       
+
 
     <script>
     function updateProgressBar() {
