@@ -1,0 +1,75 @@
+/* General body styling inherited from the main site */
+body {
+    font-family: "Comic Sans MS", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff; /* Text color from the original page */
+}
+
+/* Header for the portfolio section */
+h2 {
+    font-size: 36px;
+    color: #FFD700; /* Gold text to match the main site */
+    text-shadow: 2px 2px 2px #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Portfolio table styling */
+.portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    table-layout: fixed; /* Ensures consistent cell width */
+}
+
+.portfolio-table tr {
+    border-bottom: 2px solid #FFD700; /* Gold border between rows */
+}
+
+.portfolio-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+/* Image cell styling */
+.image-cell img {
+    max-width: 100%;
+    height: auto; /* Ensures the image scales properly */
+    border: 1px solid #FFD700; /* Gold border for images */
+    display: block;
+    margin: auto; /* Centers the image */
+}
+
+/* Content cell styling */
+.content-cell h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #00FFFF; /* Cyan color for headings */
+}
+
+.content-cell a {
+    color: #00FFFF;
+    text-decoration: underline;
+}
+
+.content-cell a:hover {
+    color: #FFD700; /* Gold on hover */
+    text-decoration: none;
+}
+
+.content-cell p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff; /* White text */
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFD700; /* Gold text */
+    text-shadow: 1px 1px 1px #000;
+}
